@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| WEB PNG ||</title>
+    <style>
+        body
+        {
+            background: url('laptop.jpg');
+            background-size: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+        }
+        #navbar
+        {
+            height: 80px;
+            width: 100%;
+            border: 1px solid black;
+            background-color: rgb(9, 147, 240);
+            border-radius: 25px;
+        }
+        #logo
+        {
+            color: white;
+            line-height: 80px;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+        #navbar ul
+        {
+            float: right;
+            margin-right: 50px;
+        }
+        #navbar ul li
+        {
+            display: inline-block;
+            margin-right: 15px;
+            line-height: 50px;
+            font-size: 21px;
+            /* border: 1px solid black; */
+        }
+        #navbar ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #navbar ul li a:hover
+        {
+            font-size: 22px;
+            background-color: rgb(11, 124, 199);
+            transition: 0.5s;
+            padding: 5px;
+        }
+        #outer
+        {
+            /* border: 1px solid black; */
+            margin-top: 50px;
+            height: 700px;
+            width: 100%;
+        }
+        #right
+        {
+            float: right;
+            height: 700px;
+            width: 30%;
+            border: 10px solid red;
+            border-radius: 10px;
+            background-color: floralwhite;
+        }
+        
+        #right form p
+        {
+            font-size: 30px;
+            background-color: black;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 25px;
+            width: 50%;
+            color: white;
+            margin: auto;
+            margin-top: 25px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        #right form input
+        {
+            margin-top: 25px;
+            height: 45px;
+            width: 55%;
+            text-align: center;
+            border-radius: 20px;
+        }
+        #right form select
+        {
+            margin-top: 25px;
+            height: 45px;
+            width: 55%;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 22px;
+        }
+        ::placeholder
+        {
+            font-size: 22px;
+            color: rgb(70, 67, 67);
+        }
+        #btn
+        {
+            height: 60px;
+            width: 150px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            margin-top: 22px;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        #btn:hover
+        {
+            background-color: red;
+            transition: 0.5s;
+        }
+        #left
+        {
+            float: left;
+            height: 700px;
+            width: 68%;
+            /* border: 1px solid lime; */
+        }
+        #one
+        {
+            height: 700px;
+            float: left;
+            width: 70%;
+            /* border: 1px solid red; */
+        }
+        #two
+        {
+            height: 700px;
+            width: 29%;
+            float: right;
+            /* border: 1px solid greenyellow; */
+        }
+        #adca
+        {
+            height: 175px;
+            width: 100%;
+            background-color: saddlebrown;
+            color: white;
+        }
+        #adca:hover
+        {
+            zoom: 1.2;
+        }
+        .heading
+        {
+            display: inline-block;
+            font-size: 3rem;
+            margin: 2px 10px;
+            color:black;
+        }
+        .description
+        {
+            margin-top: 5px;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+        #dca
+        {
+            height: 175px;
+            width: 100%;
+            background-color: brown;
+            color: white;
+        }
+        #dca:hover
+        {
+            zoom: 1.2;
+        }
+        #typing
+        {
+            height: 175px;
+            width: 100%;
+            background-color: cadetblue;
+            color: white;
+        }
+        #typing:hover
+        {
+            zoom: 1.2;
+        }
+        #tally
+        {
+            height: 175px;
+            width: 100%;
+            background-color: cornflowerblue;
+            color: white;
+        }
+        #tally:hover
+        {
+            zoom: 1.2;
+        }
+        #notice
+        {
+            text-align: center;
+            font-size: 35px;
+            line-height: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+            background-color: thistle;
+            height: 80px;
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+        #info1
+        {
+            background-color: white;
+            height: 150px;
+            text-align: center;
+            font-size: 20px;
+            color: red;
+        }
+        #info2
+        {
+            background-color: white;
+            height: 150px;
+            text-align: center;
+            font-size: 20px;
+            color: blueviolet;
+        }
+        #info3
+        {
+            background-color: white;
+            height: 150px;
+            text-align: center;
+            font-size: 20px;
+            color: darkred;
+        }
+        #info4
+        {
+            background-color: white;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <label id="logo">Kaif Education</label>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </header>
+    <div id="outer">
+        <div id="right">
+            <form align="center">
+                <p>Enroll Now!!</p>
+                <input type="text" placeholder="Enter your First Name"><br>
+                <input type="text" placeholder="Enter your Last Name"><br>
+                <input type="number" placeholder="Enter your Phone Number"><br>
+                <input type="email" placeholder="Enter your E-mail">
+                <input type="number" placeholder="Enter your Adhar card no"><br>
+                <input type="date" placeholder="Enter your DOB"><br>
+                <select>
+                    <option>--Select your Course--</option>
+                    <option>ADCA</option>
+                    <option>DCA</option>
+                    <option>Typing</option>
+                    <option>Tally</option>
+                    <option>Tally + ADCA</option>
+                    <option>Tally + DCA</option>
+                    <option>Tally + Typing</option>
+                </select> <br>
+                <button type="submit" id="btn">Register now!!</button>
+            </form>
+        </div>
+        <div id="left">
+            <div id="one">
+                <div id="adca">
+                    <h2 class="heading">ADCA</h2>
+                    <p class="description">Advance Diplome In Computer's Applicatoin: In this course you will learn all basic features about <b>Computer</b> and it's uses.<br><b>Course Duration:</b> <i style="color:black;">"1 year."</i><br>Fee: <b style="color:yellow">5000 INR</b></p>
+                </div>
+                <div id="dca">
+                    <h2 class="heading">DCA</h2>
+                    <p class="description">Diploma In Computer's Application: In this course you will learn some basic features of <b>Computers</b> and it's uses.<br><b>Course Duration:</b> <i style="color:black;">"6 months"</i><br>Fee: <b style="color:yellow">3000 INR</b></p>
+                </div>
+                <div id="typing">
+                    <h2 class="heading">Typing</h2>
+                    <p class="description">In this course you will learn about <b>touch typing</b> in English and Hindi language.<br><b>Couse Duration: </b><i>"3 months"</i><br>Fee: <b style="color:yellow">1500 INR</b></p>
+                </div>
+                <div id="tally">
+                    <h2 class="heading">Tally</h2>
+                    <p class="description">In this course you will learn easy-to-use accounting features that permit you to record buisness transactions easily and instantly<br><b>Couse Duration: </b><i>"3 months"</i><br>Fee: <b style="color:yellow">3000 INR</b></p>
+                </div>
+            </div>
+            <div id="two">
+                <p id="notice">Notice!</p>
+                <marquee direction="up" id="info1" scrollamount="5">Enroll in Tally and ADCA and get 1000.Rs Off</marquee>
+                <marquee direction="up" id="info2" scrollamount="5">Enroll in Tally and DCA and get 500.Rs Off</marquee>
+                <marquee direction="up" id="info3" scrollamount="5">Enroll in Tally and Typing and get 500.Rs Off</marquee>
+                <marquee id="info4" scrollamount="5">Hurry up! Offer is limited.</marquee>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
